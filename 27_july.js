@@ -89,11 +89,17 @@
 // s-4: convert your code in actually code
 // s-5: run and debug
 
-let num = "12.5";
+// let num = "12.5";
 
-let num1 = parseFloat(num)
-
-let num2 = Math.
-console.log(num1);
+// let num1 = parseFloat(num)
 
 
+// let num2 = Math.
+// console.log(num1);
+
+
+
+// let num = 1.234566;
+// let num1 = num.toFixed(3);
+
+// console.log(num1);

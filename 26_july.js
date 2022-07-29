@@ -40,6 +40,7 @@
 // astroguru(2, "pinki", "kerla", "swe");
 
 
+
 // 0 to 1000
 
 // 0 2 4 6 8 10 12 14 
@@ -49,6 +50,6 @@
 
 // l = 13, r = 101
 
-for(let i = 0; i <= 1000; i+=2){
-    console.log(i);
-}
+// for(let i = 0; i <= 1000; i+=2){
+//     console.log(i);
+// }
