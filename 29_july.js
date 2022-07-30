@@ -93,6 +93,6 @@
 
 // console.log(str1);
 
-let ret = (18 > 19) ? "Hii": "Hello";
+// let ret = (18 > 19) ? "Hii": "Hello";
 
-console.log(ret);
+// console.log(ret);
