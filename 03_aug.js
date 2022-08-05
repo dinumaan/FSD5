@@ -18,18 +18,24 @@
 
 // functional programming in javaScript
 
-for (let i = 1; i <= 100; i++) {
-  let num = i;
-  let rev_num = 0;
-  while (num > 0) {
-    rev_num = rev_num * 10 + (num % 10);
-    num = Math.floor(num / 10);
-  }
-  if (rev_num == i) {
-    console.log(`${i} number is palindrome`);
-  }
-}
+// for (let i = 1; i <= 100; i++) {
+//   let num = i;
+//   let rev_num = 0;
+//   while (num > 0) {
+//     rev_num = rev_num * 10 + (num % 10);
+//     num = Math.floor(num / 10);
+//   }
+//   if (rev_num == i) {
+//     console.log(`${i} number is palindrome`);
+//   }
+// }
 // 234/10 , 4
 // 23/10, 40+3
 // 2/3 , 430 + 2
 // 432
+
+// let num = 49;
+// let num1 = Math.sqrt(num);
+// if(num1*num1 == num){
+//   console.log(`${num} is perfect sequare`);
+// }
