@@ -13,18 +13,17 @@
 // how to decide what kind of structure of i should use for my data ?
 //  Array => you just want to store your data in linear structure
 
+//  Two types of memory models
+// array based => contious allocation of memory
+// pointer based => random allocation of memory
 
-//  Two types of memory models 
-// array based => contious allocation of memory 
-// pointer based => random allocation of memory 
+//  what is the function of CPU ?
 
-//  what is the function of CPU ? 
+//  fetch instruction => decode the instruction => exectuate the inststuction => store the result in memory
 
-//  fetch instruction => decode the instruction => exectuate the inststuction => store the result in memory 
-
-//  Oprations that we can do on array data structure 
-// 1. add(x) => insert the x in array => in the end ? beginning ? middle ? 
-// 2. search(x) => wheather x is present in the array or not 
+//  Oprations that we can do on array data structure
+// 1. add(x) => insert the x in array => in the end ? beginning ? middle ?
+// 2. search(x) => wheather x is present in the array or not
 // 3. remove(x) => remove the x if x is present
 
 //  in JavaScript
@@ -32,6 +31,42 @@
 // search(x) => indexOf(x) // return the indexOf x if x is present otherwise return -1;
 // remove in the end  => pop();
 
-//  Execercise 
+//  Execercise
 // try add element in array int the beginng and middle
-//  tyr to remove element in array that is not last element 
+//  tyr to remove element in array that is not last element
+
+function isPalindrome(num) {
+  let temp = num;
+  let reverse = 0;
+
+  while (temp != 0) {
+    reverse = reverse * 10;
+    let digit = temp % 10;
+    reverse = reverse + digit;
+    temp = Math.floor(temp / 10);
+  }
+  if (num == reverse) {
+    return true;
+  }
+  return false;
+}
+
+function isPrime(num) {
+  for (let i = 2; i < num; i++) {
+    if (num % i == 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+
+for(let i = 1; i <= 50; i++){
+    if(isPalindrome(i) && isPrime(i) ){
+        console.log(i);
+    }
+}
+
+
+// 33
+// 
