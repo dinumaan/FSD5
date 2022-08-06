@@ -9,7 +9,7 @@
 // Output
 // 2
 
-let b = 10, c  = 4, a = 10;
-let e = (a+c-1)%b == 0 ? b : (a+c-1)%b;
-console.log(e);
+// let b = 10, c  = 4, a = 10;
+// let e = (a+c-1)%b == 0 ? b : (a+c-1)%b;
+// console.log(e);
 
