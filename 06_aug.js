@@ -35,38 +35,70 @@
 // try add element in array int the beginng and middle
 //  tyr to remove element in array that is not last element
 
-function isPalindrome(num) {
-  let temp = num;
-  let reverse = 0;
+// function isPalindrome(num) {
+//   let temp = num;
+//   let reverse = 0;
 
-  while (temp != 0) {
-    reverse = reverse * 10;
-    let digit = temp % 10;
-    reverse = reverse + digit;
-    temp = Math.floor(temp / 10);
-  }
-  if (num == reverse) {
-    return true;
-  }
-  return false;
-}
+//   while (temp != 0) {
+//     reverse = reverse * 10;
+//     let digit = temp % 10;
+//     reverse = reverse + digit;
+//     temp = Math.floor(temp / 10);
+//   }
+//   if (num == reverse) {
+//     return true;
+//   }
+//   return false;
+// }
 
-function isPrime(num) {
-  for (let i = 2; i < num; i++) {
-    if (num % i == 0) {
-      return false;
-    }
-  }
-  return true;
-}
+// function isPrime(num) {
+//   for (let i = 2; i < num; i++) {
+//     if (num % i == 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
 
+// for(let i = 1; i <= 50; i++){
+//     if(isPalindrome(i) && isPrime(i) ){
+//         console.log(i);
+//     }
+// }
 
-for(let i = 1; i <= 50; i++){
-    if(isPalindrome(i) && isPrime(i) ){
-        console.log(i);
-    }
-}
+// function printNotoString(N) {
+//   let str = " ";
+//   str = N.toString();
+//   for (let i = 0; i < str.length; i++) {
+//     let t = str.charAt(i);
+//     let cn = parseInt(t);
+   
+//     switch (cn) {
+//       case 0:
+//         console.log("zero");
+//         break;
+//       case 1:
+//         console.log("one");
+//       case 2:
+//         console.log("two");
+//       case 3:
+//         console.log("three");
+//       case 4:
+//         console.log("four");
+//         break;
+//       case 5:
+//         console.log("five");
+//         break
+//       case 6:
+//         console.log("six");
+//       case 7:
+//         console.log("seven");
+//       case 8:
+//         console.log("eight");
+//       case 9:
+//         console.log("nine");
+//     }
+//   }
+// }
 
-
-// 33
-// 
+// printNotoString(55);
