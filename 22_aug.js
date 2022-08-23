@@ -41,6 +41,11 @@ const mapping = {
     "I": 1,
 }
 
+// MVI => 1000 + 5 + 1
+// MIV => 1000 + 1 + 5
+// let str = "MIV"
+
+
 function solve(num){
     let ans = "";
     while( num > 0){
@@ -50,7 +55,6 @@ function solve(num){
                 console.log(key);
             }
             num = num%mapping[key];
-            // console.log(rem, mapping[key]);
         }
     }
 
