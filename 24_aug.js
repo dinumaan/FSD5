@@ -65,44 +65,47 @@ console.log(min_elm);
 // Input: strs = ["flower","flow","flight"]
 // Output: "fl"
 
-
-let strs = ["flower", "flow", "flight"];
+// let strs = ["flower", "flow", "flight"];
 
 // we will check common prefix of length 1
 // if no common prefix return lenth-1
 
-let maxSize = 1000000;
+// let maxSize = 1000000;
 
-strs.forEach((x) => {
-  maxSize = Math.min(maxSize, x.length);
-});
+// strs.forEach((x) => {
+//   maxSize = Math.min(maxSize, x.length);
+// });
 
-console.log(maxSize);
+// console.log(maxSize);
 
-for (let i = 1; i <= maxSize; i++) {
-  let str = strs[0].substring(0, i);
+// for (let i = 1; i <= maxSize; i++) {
+//   let str = strs[0].substring(0, i);
 
-  //   for (let j = 1; j < strs.length; j++) {
-  //     let st = strs[j].substring(0, i);
-  //     if (str != st) {
-  //       let ans = strs[0].substring(0, i - 1);
-  //       console.log(ans);
-  //       return;
-  //     }
-  //   }
+//   for (let j = 1; j < strs.length; j++) {
+//     let st = strs[j].substring(0, i);
+//     if (str != st) {
+//       let ans = strs[0].substring(0, i - 1);
+//       console.log(ans);
+//       return;
+//     }
+//   }
 
-  let flag = 0;
-  strs.forEach((x) => {
-    let st = x.substring(0, i);
-    if (st != str) {
-      flag = 1;
-      let ans = x.substring(0, i - 1);
-      console.log(ans);
-      return;
-    }
-  });
+//   let flag = 0;
+//   strs.forEach((x) => {
+//     let st = x.substring(0, i);
+//     if (st != str) {
+//       flag = 1;
+//       let ans = x.substring(0, i - 1);
+//       console.log(ans);
+//       return;
+//     }
+//   });
 
-  if (flag == 1) {
-    return;
-  }
-}
+//   if (flag == 1) {
+//     return;
+//   }
+// }
+
+// var a = 12;
+// var a = 14;
+// console.log(a);
